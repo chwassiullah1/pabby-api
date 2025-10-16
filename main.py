@@ -380,7 +380,7 @@ async def fetch_invoice(request: Request):
             
 
 @app.post("/leads")
-async def fetch_invoice(request: Request):
+async def fetch_lead(request: Request):
     body = await request.json()
     username = body.get("username")
     password = body.get("password")
